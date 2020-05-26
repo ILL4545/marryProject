@@ -1,0 +1,16 @@
+<view class="gifts" style="margin-top: 34px;">
+		<view class='giftlist' style=''>
+				<view class="img">
+					<image url="../Eventactivities/Eventactivities" src="../../images/12.png" mode="widthFix" onclick='exmapleDetail()'></image>
+				</view>
+		</view>
+</view>
+
+
+
+<!-- <view class="zixun">
+  <text class="iconfont icon-zixun">默认</text> 
+   <text class="iconfont icon-zixun" style='margin-left: 20rpx;'>价格</text> 
+  <text class="iconfont icon-zixun" style='margin-left: 20rpx;'>浏览量</text> 
+     <text class="iconfont icon-zixun" style='margin-left: 20rpx;' >筛选</text> 
+</view> -->

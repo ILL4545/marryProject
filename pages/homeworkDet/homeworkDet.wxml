@@ -1,0 +1,322 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+
+
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+<video style="width: 100%" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls class="videoimage"></video>
+<view class="hwtitle" style="text-align: center;"><text style="font-weight: bold">你是最好的</text></view>
+<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text>#主题 #主题  #主题  #主题</text> </view>
+<view class="hwtitle " style="font-size: 25rpx;text-align: center;">
+	<text>婚期: 2020年05月10日 /</text>
+	<text> 酒店: 天来豪庭</text>
+</view>
+<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text style="font-size:40rpx">¥ 22000</text> </view>
+
+<navigator url='../priceDetail/priceDetail'>
+<view style="margin-left: 270rpx;margin-top:8px;">
+	<view class="zixun" style="">
+		<text class="" style=''>报价明细</text>
+	</view>
+</view>
+	</navigator>
+
+<view class="mainbody" style="margin-top: 4vw;">
+	<view class="conview">
+		简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味
+	</view>
+</view>
+
+<!-- url="../Eventactivities/Eventactivities"  -->
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+<view class='giftlist' style=''>
+	<navigator url='../homeworkDet/homeworkDet'>
+		<view class="img">
+			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+		</view>
+	</navigator>
+</view>
+
+
+
+<view style="margin-left: 270rpx;margin-top:8px;">
+	<view class="zixun" style="">
+		<text class="" style=''>加载更多</text>
+	</view>
+</view>
+
+<view class="hwtitle" style=""><text style="font-size: 5vw;font-weight: bold">婚礼团队</text></view>
+
+<view style="overflow-x: scroll;white-space: nowrap">
+
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+	<view style="display: inline-block;text-align: center;">
+		<navigator url="../workmanDet/workmanDet">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px">珍珍</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+	</view>
+</view>
+
+
+<!-- <view class="hwtitle">我家娃的作业——21天习惯养成计划：帮妈妈做家务第3天</view>
+<view class="info">
+  <text class="name">周颖一</text>
+  <text class="date">2020年3月21日</text>
+  <text class="pageview">浏览量:1382</text>
+</view> -->
+<!-- <view class="mainbody">
+  <view class="conview">
+      如何选择适合自己的轮滑鞋,这个问题无论是在新手还是在有经验玩家之中,都是一个值得慎重考虑的问题。轮滑运动包括花样、速度、极限单排、休闲健身等 如何选择适合自己的轮滑鞋,这个问题无论是在新手还是在有经验玩家之中,都是一个值得慎重考虑的问题。轮滑运动包括花样、速度、极限单排、休闲健身等
+  </view>
+  <view class="{{picstyle}}">
+    <view wx:for="{{bnrUrl}}"><image src="{{item.url}}" mode="widthFix"></image></view>
+  </view>
+</view> -->
+
+<view class="pinglun">
+	<view class="pl">评论(3)</view>
+	<navigator url="../dzanlist/dzanlist" class="dzan">
+		<view class="ztitle">
+			<image wx:for="{{bnrUrl2}}" src="{{item.url}}"></image>
+		</view>
+		<view class="coun">赞 741</view>
+	</navigator>
+</view>
+
+<view>
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf">
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+		<!-- <view class="content">
+				撒大声地所多所多所多所
+				</view> -->
+	</view>
+
+	<view class="pllist" style="padding-top: 0px">
+		<view class="main">
+			<!-- <button class="zan" bindtap="dianzan2">
+        <text class="iconfont {{zan2}}"></text>{{zancount}}
+      </button> -->
+			<view class="con">很好的婚礼好漂亮可以学习一下</view>
+			<view class="timeandhf">
+				<text>03-28 05:05</text><button class="hf">3回复</button>
+			</view>
+			<view class="hflistbox" style="width: 105%">
+				<view class="hflist">
+					<text class="hfname">周颖一</text><text class="hficon">回复</text><text class="hfname">可可:</text>
+					<text class="hfcon">对的，养成好的点点滴滴习惯</text>
+					<!-- <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button bindtap="openplview">· 回复</button>
+          </view> -->
+				</view>
+				<!-- <view class="hflist">
+          <text class="hfname">小刘:</text>
+          <text class="hfcon">别人家的孩子</text>
+          <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button bindtap="openplview">· 回复</button>
+          </view>
+        </view>
+        <view class="hflist">
+          <text class="hfname">鑫鑫:</text>
+          <text class="hfcon">我们家也要学习一下才行</text>
+          <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button>· 回复</button>
+          </view>
+        </view> -->
+			</view>
+		</view>
+	</view>
+</view>
+
+
+<view>
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈少少</view>
+					<view class="pf">
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+		<!-- <view class="content">
+				撒大声地所多所多所多所
+				</view> -->
+	</view>
+
+	<view class="pllist" style="padding-top: 0px">
+		<view class="main">
+			<!-- <button class="zan" bindtap="dianzan2">
+        <text class="iconfont {{zan2}}"></text>{{zancount}}
+      </button> -->
+			<view class="con">间距仅是滴是滴</view>
+			<view class="timeandhf">
+				<text>03-28 05:05</text><button class="hf">1回复</button>
+			</view>
+			<view class="hflistbox" style="width: 105%">
+				<view class="hflist">
+					<text class="hfname">周颖一</text><text class="hficon">回复</text><text class="hfname">可可:</text>
+					<text class="hfcon">对的，养成好的点点滴滴习惯</text>
+					<!-- <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button bindtap="openplview">· 回复</button>
+          </view> -->
+				</view>
+				<!-- <view class="hflist">
+          <text class="hfname">小刘:</text>
+          <text class="hfcon">别人家的孩子</text>
+          <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button bindtap="openplview">· 回复</button>
+          </view>
+        </view>
+        <view class="hflist">
+          <text class="hfname">鑫鑫:</text>
+          <text class="hfcon">我们家也要学习一下才行</text>
+          <view class="timeandhf" style="margin: 5px 0 0 0;">
+              <text>03-28 05:05</text><button>· 回复</button>
+          </view>
+        </view> -->
+			</view>
+		</view>
+	</view>
+</view>
+
+
+
+<view class="hwtitle" style=""><text style="font-size: 5vw;font-weight: bold">猜你喜欢</text></view>
+
+<view style="overflow-x: scroll;white-space: nowrap;padding-bottom: 10vw">
+
+	<view style="display: inline-block;">
+		<navigator url='../homeworkDet/homeworkDet'>
+			<image class='headcopy' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px;padding-left: 5vw">简单爱</text>
+		<text style="display:inline-block;font-size: 12px;color:#999;padding-left: 5vw">#简洁 #唯美 # #简洁</text>
+	</view>
+
+	<view style="display: inline-block;">
+		<navigator url='../homeworkDet/homeworkDet'>
+			<image class='headcopy' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px;padding-left: 5vw">简单爱</text>
+		<text style="display:inline-block;font-size: 12px;color:#999;padding-left: 5vw">#简洁 #唯美 # #简洁</text>
+	</view>
+
+	<view style="display: inline-block;">
+		<navigator url='../homeworkDet/homeworkDet'>
+			<image class='headcopy' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px;padding-left: 5vw">简单爱</text>
+		<text style="display:inline-block;font-size: 12px;color:#999;padding-left: 5vw">#简洁 #唯美 # #简洁</text>
+	</view>
+
+
+	<view style="display: inline-block;">
+		<navigator url='../homeworkDet/homeworkDet'>
+			<image class='headcopy' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		</navigator>
+		<text style="display: block;font-size: 14px;padding-left: 5vw">简单爱</text>
+		<text style="display:inline-block;font-size: 12px;color:#999;padding-left: 5vw">#简洁 #唯美 # #简洁</text>
+	</view>
+
+
+
+</view>

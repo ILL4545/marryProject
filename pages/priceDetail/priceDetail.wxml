@@ -1,0 +1,53 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+<view style="margin-top: 5vw;width: 100%;text-align: center">
+
+<text style="font-size:17px">现场布置费用  ¥6,511</text>
+</view>
+<view style="margin-left: 30rpx;margin-top: 5vw;font-weight: bold;font-size:20px">| 执行人员</view>
+<view class='giftlist' style='margin-top: 7vw;height: 19vw;'>
+	<view class="listbox">
+		<view class="list" style="width: 100%;border-bottom: 2px solid #efefef;"> 
+			<text class="titlename" style="width: 34vw">账户余额</text>
+			<view class="rightbutton" style="width: 130rpx;float: right">
+				<text class="" style="padding-right: 25rpx;font-size:14px;font-weight: bold;width: 100rpx">¥880</text>
+			</view>
+		</view>
+
+				<view class="list" style="width: 100%;border-bottom: 2px solid #efefef;"> 
+			<text class="titlename" style="width: 34vw">账户余额</text>
+			<view class="rightbutton" style="width: 130rpx;float: right">
+				<text class="" style="padding-right: 25rpx;font-size:14px;font-weight: bold;width: 100rpx">¥880</text>
+			</view>
+		</view>
+				<view class="list" style="width: 100%;border-bottom: 2px solid #efefef;"> 
+			<text class="titlename" style="width: 34vw">账户余额</text>
+			<view class="rightbutton" style="width: 130rpx;float: right">
+				<text class="" style="padding-right: 25rpx;font-size:14px;font-weight: bold;width: 100rpx">¥880</text>
+			</view>
+		</view>
+
+	</view>
+
+</view>
+
+
+
+
+<view style="margin-left: 4vw;margin-top: 5vw;font-weight: bold">银行卡</view>
+<view class='giftlist' style='margin-top: 7vw;height: 19vw;'>
+	<view class="listbox">
+		<view class="list" style="width: 37vw">
+			<text class="titlename" style="width: 34vw">账户余额</text>
+			<view class="rightbutton" style="width: 35vw;float: right">
+				<!-- <button><text class="iconfont icon-shoucang1"></text>200</button> -->
+				<!-- <button><text class="iconfont icon-pingjia1"></text>100</button> -->
+				<text class="titlename" style="padding-right: 25rpx;font-size:14px;font-weight: bold">¥1880</text>
+
+			</view>
+
+		</view>
+
+	</view>
+
+</view>

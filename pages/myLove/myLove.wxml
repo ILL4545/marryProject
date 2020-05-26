@@ -1,0 +1,132 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+
+
+
+
+
+<view class="navbar">
+	<block wx:for-items="{{tabs}}" wx:key="tabs">
+		<view id="{{index}}" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+			<view class="weui-navbar__title">{{item}}</view>
+		</view>
+	</block>
+</view>
+
+<!-- <view class="navbar">
+    <view id="0" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+       <view class="weui-navbar__title">案例</view>
+    </view>
+    <view id="0" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+       <view class="weui-navbar__title">评价</view>
+    </view>
+</view>  -->
+
+<!-- <view wx:if="{{boolean==true}}">
+    <view class="bg_black"></view>
+</view> -->
+
+<!-- <view class="img" style="margin-top: 10px"><image  style="margin-left: 40rpx;width: 280px;border-radius: 7px" url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view> -->
+
+<view class="gifts" style="margin-top: 34px;" wx:if="{{activeIndex==0}}">
+
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+
+</view>
+
+
+<view wx:if="{{activeIndex==1}}">
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf zixun">
+					<!-- <text>SDS</text> -->已收藏
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf zixun">
+					<!-- <text>SDS</text> -->已收藏
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+		<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf zixun">
+					<!-- <text>SDS</text> -->已收藏
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+</view>

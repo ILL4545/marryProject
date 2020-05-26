@@ -1,0 +1,40 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+
+
+<!-- <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
+ <video style="width: 100%" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls class="videoimage" ></video>   -->
+
+<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: inline-block;margin-left: 40vw" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+<view style="display:inline-block">
+
+</view>
+<view style="text-align: center">
+	<view style="display: inline-block;text-align: center;">
+		<text style="display: block;font-size: 14px">珍珍</text>
+
+		<text style="display:block;font-size: 12px;color:#999;margin-bottom: 10vw;">策划师</text>
+		<text style="display:inline_block;font-size: 12px;color:#999;margin-right: 8vw">性别: 女 </text>
+		<text style="display:inline_block;font-size: 12px;color:#999;margin-right: 8vw">年龄: 25  </text>
+		<text style="display:inline_block;font-size: 12px;color:#999">所在城市: 广州市 </text>
+
+	</view>
+</view>
+
+
+<view class="mainbody" style="margin-top: 4vw;padding-bottom: 0px">
+	<view class="conview" style="font-size: 13px">
+		简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味
+	</view>
+</view>
+
+
+
+
+
+
+<!-- <view class="img" style="margin-top: 10px"><image  style="margin-left: 40rpx;width: 280px;border-radius: 7px" url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view> -->
+
+
+
+

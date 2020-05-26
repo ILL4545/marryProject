@@ -1,0 +1,127 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.5",
+	"appid": "wx48c94486c8b5b246",
+	"projectname": "weapp-house-mall-master",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "案例详情",
+					"pathName": "pages/homeworkDet/homeworkDet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "案例首页",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "职业人主页",
+					"pathName": "pages/workmanDet/workmanDet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "职业人简介",
+					"pathName": "pages/workmanDetail/workmanDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "婚礼服务",
+					"pathName": "pages/workmanService/workmanService",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/user/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/myLove/myLove",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的合同",
+					"pathName": "pages/myContract/myContract",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的订单",
+					"pathName": "pages/shoppingcar/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/myWallet/myWallet",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报价明细",
+					"pathName": "pages/priceDetail/priceDetail",
+					"scene": null
+				}
+			]
+		}
+	}
+}

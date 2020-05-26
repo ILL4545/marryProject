@@ -1,0 +1,217 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+
+
+<!-- <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
+ <video style="width: 100%" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls class="videoimage" ></video>   -->
+
+<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: inline-block;margin-left: 40vw" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+    <view style="display:inline-block">
+    	<navigator url='../workmanDetail/workmanDetail'>
+	<view class="zixun" style="display:inline-block;margin-left: 12vw">
+		<text class="" style=''>简介</text>
+	</view>
+  </navigator>
+</view>
+<view style="text-align: center">
+	<view style="display: inline-block;text-align: center;">
+		<text style="display: block;font-size: 14px">珍珍</text>
+
+		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">执行场次: 402 |  预订场次: 55</text>
+	</view>
+</view>
+
+
+<view class="mainbody" style="margin-top: 4vw;padding-bottom: 0px">
+	<view class="conview" style="font-size: 13px">
+		简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味
+	</view>
+</view>
+
+<view class="list">
+	<navigator url='../workmanService/workmanService'>
+	<view class="item" bindtap="order">
+		<image src="../../images/dingdan.png" />新娘全部跟妆
+		<text class="jump">〉</text>
+	</view>
+  </navigator>
+	<view class="item" bindtap="address">
+		<image src="../../images/ding.png" />查看档期
+		<text class="jump">〉</text>
+	</view>
+</view>
+
+
+<view class="navbar">
+	<block wx:for-items="{{tabs}}" wx:key="tabs">
+		<view id="{{index}}" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+			<view class="weui-navbar__title">{{item}}</view>
+		</view>
+	</block>
+</view>
+
+<!-- <view class="navbar">
+    <view id="0" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+       <view class="weui-navbar__title">案例</view>
+    </view>
+    <view id="0" class="{{activeIndex == index ? 'active' : ''}} weui-navbar__item" bindtap="tabClick">
+       <view class="weui-navbar__title">评价</view>
+    </view>
+</view>  -->
+
+<!-- <view wx:if="{{boolean==true}}">
+    <view class="bg_black"></view>
+</view> -->
+
+<!-- <view class="img" style="margin-top: 10px"><image  style="margin-left: 40rpx;width: 280px;border-radius: 7px" url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view> -->
+
+<view class="gifts" style="margin-top: 34px;" wx:if="{{activeIndex==0}}">
+
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">星空之乱爱</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥22200</text>
+			</view>
+		</view>
+		<view class="titlename"><text>#主题 #主题 #主题</text> </view>
+	</view>
+
+</view>
+
+
+<view wx:if="{{activeIndex==1}}">
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf">
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+		<!-- <view class="content">
+				撒大声地所多所多所多所
+				</view> -->
+	</view>
+
+
+
+	<view class="pllist" style="padding-top: 0px">
+		<view class="main" style="width: 94%">
+			<!-- <button class="zan" bindtap="dianzan2">
+        <text class="iconfont {{zan2}}"></text>{{zancount}}
+      </button> -->
+			<view class="con" style="font-size: 12px">很好的婚礼好漂亮可以学习一下真的很行巨星自己的婚礼啊很好的婚礼好漂亮可以很好的婚礼好漂亮可以学习一下真的很行巨星自己的婚礼啊很好</view>
+		</view>
+		<!--     class根据图片张数变化 -->
+		<view class="">
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+		</view>
+	</view>
+
+
+
+
+	<view class="plist" style="">
+		<view class="info" style="padding-bottom: 0px">
+			<image class='head' style="margin-top: 2vw;margin-left: 0vw;display: inline-block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+			<view class="infomain" style="width: 75%;">
+				<view class="infomainview">
+					<view class="name" style="margin-top: 2vw">陈晓明</view>
+					<view class="pf">
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+						<image src="../../images/psc.png"></image>
+					</view>
+				</view>
+				<view class="infomainview">
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block">13532437656</view>
+					<view class="" style="font-size: 11px;margin-top: 1vw;display: inline-block;float:right;color: #999;">2011年2月12日</view>
+				</view>
+			</view>
+		</view>
+		<!-- <view class="content">
+				撒大声地所多所多所多所
+				</view> -->
+	</view>
+
+
+
+	<view class="pllist" style="padding-top: 0px">
+		<view class="main" style="width: 94%">
+			<!-- <button class="zan" bindtap="dianzan2">
+        <text class="iconfont {{zan2}}"></text>{{zancount}}
+      </button> -->
+			<view class="con" style="font-size: 12px">很好的婚礼好漂亮可以学习一下真的很行巨星自己的婚礼啊很好的婚礼好漂亮可以很好的婚礼好漂亮可以学习一下真的很行巨星自己的婚礼啊很好</view>
+		</view>
+		<!--     class根据图片张数变化 -->
+		<view class="">
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+			<image style="padding: 4px;display: initial-block;width: 30%;height: 30vw !important;border-radius: 0rpx" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix"></image>
+		</view>
+	</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

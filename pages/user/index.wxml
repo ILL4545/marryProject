@@ -1,0 +1,53 @@
+<view class="user-head" style="margin-top: -8vw">
+    <view class="center" bindtap = "userdata">
+        <view class="user-img">
+            <!-- <image src="{{userInfo.avatarUrl}}"/> -->
+             <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"/>
+        </view>
+        <view class="user-text">
+            <!-- <text class="text">{{userInfo.nickName}}</text> -->
+             <text class="text" style="font-weight: bold">冯小健</text>
+        </view>
+    </view>
+</view>
+
+
+<view class="four_div">
+  <navigator url='../myLove/myLove'>
+    <span class="iconfont icon-wodekaquan iconone"></span>
+    我的收藏
+    <i class="iconfont icon-icon-right"></i>
+    <p>(5)</p>
+  </navigator>
+  <navigator url='../myContract/myContract'>
+    <span class="iconfont icon-xuexiao icontwo"></span>
+    我的合同
+    <i class="iconfont icon-icon-right"></i>
+  </navigator>
+  <navigator url='../myWallet/myWallet'>
+    <span class="iconfont icon-pingjia iconthree"></span>
+    我的钱包
+    <i class="iconfont icon-icon-right"></i>
+  </navigator>
+  <navigator>
+    <span class="iconfont icon-zixun1 iconfour"></span>
+    邀请好友
+    <i class="iconfont icon-icon-right"></i>
+  </navigator>
+  <navigator>
+    <span class="iconfont icon-zixun1 iconfour"></span>
+    我的预告片
+    <i class="iconfont icon-icon-right"></i>
+  </navigator>
+</view>
+
+<!-- <view class="list">
+    <view class="item" bindtap="order">
+        <image src="../../images/dingdan.png"/>我的订单
+        <text class="jump">〉</text>
+    </view>
+    <view class="item" bindtap="address">
+        <image src="../../images/ding.png"/>我的地址
+        <text class="jump">〉</text>
+    </view>
+</view> -->

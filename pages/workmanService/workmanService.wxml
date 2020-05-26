@@ -1,0 +1,28 @@
+<!--pages/student/homeworkDet/homeworkDet.wxml-->
+
+<view class='giftlist' style='margin-top: 7vw'>
+	<view class="listbox">
+		<view class="list">
+			<text class="titlename" style="width: 34vw">西式婚礼主持</text>
+			<view class="rightbutton" style="width: 35vw;float: right">
+				<!-- <button><text class="iconfont icon-shoucang1"></text>200</button> -->
+				<!-- <button><text class="iconfont icon-pingjia1"></text>100</button> -->
+				<text style="padding-right: 25rpx;font-size:14px;color:#fb7299">¥880</text>
+				<text style='text-decoration: line-through;font-size: 10px;color:#777'>原价：940.0</text>
+			</view>
+		</view>
+	</view>
+	<view class="mainbody" style="margin-top: 4vw;padding-bottom: 0px">
+		<view class="conview" style="font-size: 13px">
+			简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味
+		</view>
+	</view>
+</view>
+
+
+
+
+
+
+
+
