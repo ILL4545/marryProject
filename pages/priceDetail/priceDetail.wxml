@@ -26,9 +26,7 @@
 				<text class="" style="padding-right: 25rpx;font-size:14px;font-weight: bold;width: 100rpx">¥880</text>
 			</view>
 		</view>
-
 	</view>
-
 </view>
 
 
@@ -43,7 +41,6 @@
 				<!-- <button><text class="iconfont icon-shoucang1"></text>200</button> -->
 				<!-- <button><text class="iconfont icon-pingjia1"></text>100</button> -->
 				<text class="titlename" style="padding-right: 25rpx;font-size:14px;font-weight: bold">¥1880</text>
-
 			</view>
 
 		</view>

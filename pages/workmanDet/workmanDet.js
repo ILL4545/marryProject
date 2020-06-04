@@ -1,4 +1,6 @@
 // pages/student/homeworkDet/homeworkDet.js
+var config = require('../../config.js')
+var http = require('../../utils/httpHelper.js')
 Page({
 
 
@@ -179,7 +181,32 @@ Page({
    */
   onLoad: function (options) {
     this.setpicstyle();
+    var id  = options.id
+    this.getMasterDetail(id);
+
   },
+
+  getMasterDetail:function(id){
+    var that = this;
+   //var data = {appid:config.APPID,userid:this.data.userInfo.id}
+    var data = {ids:id}
+  http.httpGet("wedding/wedding/getTeamMemberByIds" ,data,function(res){    // product/getproducttype
+  if (res.statusCode == '200'){
+          var list = res.data;
+          var getMaster = new Array()
+
+          for(var i = 0;i<list.length;i++){       
+            getMaster[i]= {age:list[i].age,id:list[i].id,avatar_url:list[i].avatar_url,book_number:list[i].book_number,city:list[i].city,created:list[i].created,description:list[i].description,liked:list[i].liked,name:list[i].name,order_number:list[i].order_number,role:list[i].role,status:list[i].status,view:list[i].view};
+          }
+         
+          that.setData({getMaster:getMaster});
+         //var goodsData =
+         // that.loadTabGoodsList(0);
+            
+        }
+    });
+},
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -51,17 +51,66 @@ Page({
         );
         
   },
+
+  /**
+     * 去除包裹的大括号
+     */
+    removeBlock:function(str) {
+      if (str) {
+        var reg = /^\{/gi
+        var reg2 = /\}$/gi
+        var reg = /\{|}/g
+        // str = str.replace(reg, '')
+        // str = str.replace(reg2, '')
+        str = str.replace(reg, '')
+        str = str.replace(/\$/g,"\#")
+        return str
+      } else {
+        return str
+      }
+    },
+
+    // 点击键盘上的搜索
+  bindconfirm:function(event){
+    var that=this;
+    //var discountName=e.detail.value['search - input'] ?e.detail.value['search - input'] : e.detail.value 
+    var input = event.detail.value 
+    
+    that.getGoodsType(input)
+  },
+
+
   //顶部分类栏
-  getGoodsType:function(){
+  getGoodsType:function(event){
         var that = this;
        var data = {appid:config.APPID,userid:this.data.userInfo.id}
-        var data = {name:'',sortedColumn:'liked desc'}
+       var sortedColumn = 'liked desc'
+       var name = ''
+       if (event != undefined  ) {
+         var e = typeof event
+         if (typeof event == 'object') {   // .currentTarget.dataset.gid
+          sortedColumn = event.currentTarget.dataset.gid
+         }else{
+          name = event
+         }
+       }
+        var data = {name:name,sortedColumn:sortedColumn}
     http.httpGet("wedding/wedding/caselist" ,data,function(res){    // product/getproducttype
       if (res.statusCode == '200'){
               var list = res.data;
               var goodsData = new Array()
               for(var i = 0;i<list.length;i++){
-                  goodsData[i]= {type:list[i].id,description:list[i].description,image_url:list[i].image_url,liked:list[i].liked,name:list[i].name,price:list[i].price,tags:list[i].tags,view:list[i].view};
+                  var tags = list[i].tags
+                  tags = that.removeBlock(tags)
+                  var idsarray  = list[i].team; var ids =''
+                  if (idsarray) {
+                    // for (let index = 0; index < idsarray.length; index++) {              
+                    //   ids =+  idsarray[index] + ','
+                    // }
+                    var reg = /\[|]/g
+                    idsarray = idsarray.replace(reg,"")
+                  }
+                  goodsData[i]= {ids:idsarray,init_price:list[i].init_price,id:list[i].id,description:list[i].description,image_url:list[i].image_url,liked:list[i].liked,name:list[i].name,price:list[i].price,tags:tags,view:list[i].view};
               }
               that.setData({goodsData:goodsData});
              //var goodsData =

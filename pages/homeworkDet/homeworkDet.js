@@ -1,4 +1,6 @@
 // pages/student/homeworkDet/homeworkDet.js
+var config = require('../../config.js')
+var http = require('../../utils/httpHelper.js')
 Page({
 
   /**
@@ -36,6 +38,7 @@ Page({
     emoji: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'],
     content:''
   },
+
   //点击表情显示表情盒子
   emojiShowHide: function () {
     this.setData({
@@ -97,6 +100,9 @@ Page({
     }
    
   },
+
+
+
   openplview: function () {
     var that = this
     that.setData({
@@ -158,8 +164,83 @@ Page({
    */
   onLoad: function (options) {
     this.setpicstyle();
+    var scene=wx.getLaunchOptionsSync();
+    console.log(scene);
+    var id = options.id;
+    var ids = options.ids;
+    console.log(id)
+    var that = this;
+    that.getGoodsType(id);
+    that.getMaster(ids);
+    
+    // app.getUserInfo(function(userInfo){
+    //      that.setData({userInfo:userInfo});
+    //      that.getGoodsType(id);
+    // }) 
   },
 
+  getGoodsType:function(id){
+    var that = this;
+   //var data = {appid:config.APPID,userid:this.data.userInfo.id}
+    var data = {id:id}
+  http.httpGet("wedding/wedding/getcasedetail" ,data,function(res){    // product/getproducttype
+  if (res.statusCode == '200'){
+          var list = res.data;
+          var goodsData = new Array()
+          // for(var i = 0;i<list.length;i++){
+          //     var tags = list[i].tags
+          //     tags = that.removeBlock(tags)
+          //     goodsData[i]= {init_price:list[i].init_price,type:list[i].id,description:list[i].description,image_url:list[i].image_url,liked:list[i].liked,name:list[i].name,price:list[i].price,tags:tags,view:list[i].view};
+          // }
+          var tags = list.tags
+          tags = that.removeBlock(tags)
+          goodsData[0]= {init_price:list.init_price,id:list.id,description:list.description,image_url:list.image_url,liked:list.liked,name:list.name,price:list.price,tags:tags,view:list.view};
+          that.setData({goodsData:goodsData});
+         //var goodsData =
+         // that.loadTabGoodsList(0);
+            
+        }
+    });
+},
+
+getMaster:function(ids){
+  var that = this;
+ //var data = {appid:config.APPID,userid:this.data.userInfo.id}
+  var data = {ids:ids}
+http.httpGet("wedding/wedding/getTeamMemberByIds" ,data,function(res){    // product/getproducttype
+if (res.statusCode == '200'){
+        var list = res.data;
+        var getMaster = new Array()
+        for(var i = 0;i<list.length;i++){       
+          getMaster[i]= {age:list[i].age,id:list[i].id,avatar_url:list[i].avatar_url,book_number:list[i].book_number,city:list[i].city,created:list[i].created,description:list[i].description,liked:list[i].liked,name:list[i].name,order_number:list[i].order_number,role:list[i].role,status:list[i].status,view:list[i].view};
+        }
+        
+        that.setData({getMaster:getMaster});
+       //var goodsData =
+       // that.loadTabGoodsList(0);
+          
+      }
+  });
+},
+
+/**
+     * 去除包裹的大括号
+     */
+    removeBlock:function(str) {
+      if (str) {
+        var reg = /^\{/gi
+        var reg2 = /\}$/gi
+        var reg = /\{|}/g
+        // str = str.replace(reg, '')
+        // str = str.replace(reg2, '')
+        str = str.replace(reg, '')
+        str = str.replace(/\$/g,"\#")
+        str = str.replace(/,/g,"    ")
+        return str
+      } else {
+        return str
+      }
+    },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

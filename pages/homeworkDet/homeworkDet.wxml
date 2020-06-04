@@ -2,21 +2,24 @@
 
 
 
-<view class='giftlist' style=''>
+<!-- <view class='giftlist' style=''>
 	<navigator url='../homeworkDet/homeworkDet'>
 		<view class="img">
 			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
 		</view>
 	</navigator>
-</view>
+</view> -->
 <video style="width: 100%" id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls class="videoimage"></video>
-<view class="hwtitle" style="text-align: center;"><text style="font-weight: bold">你是最好的</text></view>
-<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text>#主题 #主题  #主题  #主题</text> </view>
+
+<block wx:for="{{goodsData}}" wx:key="index">
+
+<view class="hwtitle" style="text-align: center;"><text style="font-weight: bold">{{item.name}}</text></view>
+<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text>{{item.tags}}</text> </view>
 <view class="hwtitle " style="font-size: 25rpx;text-align: center;">
 	<text>婚期: 2020年05月10日 /</text>
 	<text> 酒店: 天来豪庭</text>
 </view>
-<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text style="font-size:40rpx">¥ 22000</text> </view>
+<view class="hwtitle " style="font-size: 25rpx;text-align: center;"><text style="font-size:40rpx">¥ {{item.price}}</text> </view>
 
 <navigator url='../priceDetail/priceDetail'>
 <view style="margin-left: 270rpx;margin-top:8px;">
@@ -26,38 +29,18 @@
 </view>
 	</navigator>
 
-<view class="mainbody" style="margin-top: 4vw;">
+<view class="mainbody" style="margin-top: 4vw;text-align: center;">
 	<view class="conview">
-		简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味
+	{{item.description}}
+		<!-- 简单的布置加上个性创意，就能打造一场海味道主题婚礼。在布置海边主题婚礼时，新人可以将婚礼过道打造成蜿蜒形状，两边铺上应季的鲜花，简单的圆桩板凳更能节省空间，让婚礼现场更具有情调，更具有意味 -->
 	</view>
 </view>
 
-<!-- url="../Eventactivities/Eventactivities"  -->
+
 <view class='giftlist' style=''>
-	<navigator url='../homeworkDet/homeworkDet'>
+	<navigator url='../homeworkDet/homeworkDet?id={{item.id}}'>
 		<view class="img">
-			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
-		</view>
-	</navigator>
-</view>
-<view class='giftlist' style=''>
-	<navigator url='../homeworkDet/homeworkDet'>
-		<view class="img">
-			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
-		</view>
-	</navigator>
-</view>
-<view class='giftlist' style=''>
-	<navigator url='../homeworkDet/homeworkDet'>
-		<view class="img">
-			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
-		</view>
-	</navigator>
-</view>
-<view class='giftlist' style=''>
-	<navigator url='../homeworkDet/homeworkDet'>
-		<view class="img">
-			<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			<image src="{{item.image_url}}" mode="widthFix" onclick='exmapleDetail()'></image>
 		</view>
 	</navigator>
 </view>
@@ -70,59 +53,26 @@
 </view>
 
 
+</block>
 
-<view style="margin-left: 270rpx;margin-top:8px;">
+<!-- <view style="margin-left: 270rpx;margin-top:8px;">
 	<view class="zixun" style="">
 		<text class="" style=''>加载更多</text>
 	</view>
-</view>
+</view> -->
 
 <view class="hwtitle" style=""><text style="font-size: 5vw;font-weight: bold">婚礼团队</text></view>
 
 <view style="overflow-x: scroll;white-space: nowrap">
-
+<block wx:for="{{getMaster}}" wx:key="index">
 	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
+		<navigator url="../workmanDet/workmanDet?id={{item.id}}">
+			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="{{item.avatar_url}}"></image>
 		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
+		<text style="display: block;font-size: 14px">{{item.name}}</text>
+		<text style="display:inline-block;font-size: 12px;color:#999">{{item.role}}</text>
 	</view>
-	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
-		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
-	</view>
-	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
-		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
-	</view>
-	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
-		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
-	</view>
-	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
-		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
-	</view>
-	<view style="display: inline-block;text-align: center;">
-		<navigator url="../workmanDet/workmanDet">
-			<image class='head' style="margin-top: 2vw;margin-left: 4vw;display: block;" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg"></image>
-		</navigator>
-		<text style="display: block;font-size: 14px">珍珍</text>
-		<text style="display:inline-block;font-size: 12px;color:#999">策划师</text>
-	</view>
+	</block>
 </view>
 
 

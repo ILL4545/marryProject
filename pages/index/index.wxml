@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<import src="woshi/woshi.wxml"/> 
+<import src="woshi/woshi.wxml" />
 <!-- <view class="nav">
     <view class="list">
             <block wx:for="{{goodsData}}" wx:key="index">
@@ -42,14 +42,14 @@
 
 
 <view class="search">
-   <view>
-    <text class="iconfont icon-sousuo icon"></text>
-    <input class="input" placeholder="搜索你喜欢的婚礼风格名称" focus="{{autoFocus}}"  bindconfirm='resignFocus'   bindfocus="activeFocus" bindblur="resignFocus"></input>
-  </view> 
-   <button class="button" wx:if="{{sousuo}}">搜索</button> 
+	<view>
+		<text class="iconfont icon-sousuo icon" ></text>
+		<input class="input" placeholder="搜索你喜欢的婚礼风格名称" focus="{{autoFocus}}" bindconfirm='bindconfirm' bindfocus="activeFocus" bindblur="bindinput"></input>
+	</view>
+	<button class="button" wx:if="{{sousuo}}">搜索</button>
 </view>
 
- <!-- <view class="navbar">
+<!-- <view class="navbar">
   <block wx:for-items="{{tabs}}" wx:key="{{index}}">
     <view id="{{index}}" class="weui-navbar__item" bindtap="tabClick">
         <view class="{{activeIndex==index?'active weui-navbar__title':'weui-navbar__title'}}">{{item}}</view>
@@ -59,7 +59,7 @@
 </view> -->
 
 <view style="background:#fff">
-<!-- <swiper class='u-wrp-bnr' indicator-active-color="#e4463b" indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
+	<!-- <swiper class='u-wrp-bnr' indicator-active-color="#e4463b" indicator-dots='true' autoplay='true' interval='5000' duration='1000' circular='true'>
   <block wx:for="{{bnrUrl}}" wx:for-index="index">
     <swiper-item>
       <image src='{{item.url}}' class='u-img-slide' mode='aspectFill'></image>
@@ -67,7 +67,7 @@
   </block>
 </swiper> -->
 
-<!-- <view class="img_text">
+	<!-- <view class="img_text">
   <view class="itlist">
     <text>重点推荐商品重点推荐商品重点推荐商品重点推荐商品</text>
     <view class="piclist">
@@ -78,28 +78,28 @@
   </view>
 </view> -->
 
-<!-- <view class="headview">
+	<!-- <view class="headview">
   <view>限时抢购</view>
   <view>查看全部<text class="iconfont icon-icon-right"></text></view>
 </view> -->
-<!-- <view class="xianshi">
+	<!-- <view class="xianshi">
   <view><image src="../../../images/bg7.jpg" mode="widthFix"></image>剩余数量：<text>400</text></view>
   <view><image src="../../../images/bg7.jpg" mode="widthFix"></image>剩余数量：<text>400</text></view>
   <view><image src="../../../images/bg7.jpg" mode="widthFix"></image>剩余数量：<text>400</text></view>
 </view> -->
 </view>
 
-<!-- 
+
 <view class="gifts" style="margin-top: 34px;">
 <block wx:for="{{goodsData}}" wx:key="index">
 
   <view class='giftlist' style=''> 
-  <navigator url='../homeworkDet/homeworkDet'>
-   <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
+  <navigator url='../homeworkDet/homeworkDet?id={{item.id}}&ids={{item.ids}}'>
+   <view class="img"><image url="../Eventactivities/Eventactivities"  src="{{item.image_url}}" mode="widthFix" onclick='exmapleDetail()'></image></view>
    </navigator>
     <view class="titlename" style='display:initial'><text style="color:black;font-size:14px">{{item.name}}</text>  
     <view style='display:initial;float:right'>
-    <text style="padding-right: 25rpx;font-size:14px">¥{{item.price}}</text><text style='text-decoration: line-through;'>原价：940.0</text></view>
+    <text style="padding-right: 25rpx;font-size:14px">¥{{item.price}}</text><text style='text-decoration: line-through;'>原价：¥{{item.init_price}}</text></view>
     </view>
      <view class="titlename" ><text>{{item.tags}}</text> <text style='float:right' ><text class="iconfont icon-chakan2"></text>{{item.view}}人浏览</text></view>
     <view class='price ' style='display: initial;padding-left: 184rpx;'>
@@ -107,66 +107,40 @@
     
   </view>
 </block>
+</view> 
+
+
+
+<!-- <view class="gifts" style="margin-top: 34px;">
+	<view class='giftlist' style=''>
+		<navigator url='../homeworkDet/homeworkDet'>
+			<view class="img">
+				<image url="../Eventactivities/Eventactivities" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image>
+			</view>
+		</navigator>
+		<view class="titlename" style='display:initial'><text style="color:black;font-size:14px">西部风情主礼</text>
+			<view style='display:initial;float:right'>
+				<text style="padding-right: 25rpx;font-size:14px">¥13000</text><text style='text-decoration: line-through;'>原价：940.0</text></view>
+		</view>
+		<view class="titlename"><text>#自由 #西部风情</text> <text style='float:right' ><text class="iconfont icon-chakan2"></text>0人浏览</text></view>
+		<view class='price ' style='display: initial;padding-left: 184rpx;'>
+		</view>
+		
+	</view>
 </view> -->
 
 
 
-<view class="gifts" style="margin-top: 34px;">
-  <view class='giftlist' style=''> 
-  <navigator url='../homeworkDet/homeworkDet'>
-   <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
-   </navigator>
-    <view class="titlename" style='display:initial'><text style="color:black;font-size:14px">西部风情主礼</text>  
-    <view style='display:initial;float:right'>
-    <text style="padding-right: 25rpx;font-size:14px">¥13000</text><text style='text-decoration: line-through;'>原价：940.0</text></view>
-    </view>
-     <view class="titlename" ><text>#自由 #西部风情</text> <text style='float:right' ><text class="iconfont icon-chakan2"></text>0人浏览</text></view>
-    <view class='price ' style='display: initial;padding-left: 184rpx;'>
-    </view>
-    <!-- <button class="goumai">立即抢购</button> -->
-  </view>
-
-   <view class='giftlist' style=''> 
-  <navigator url='../homeworkDet/homeworkDet'>
-   <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
-   </navigator>
-    <view class="titlename" style='display:initial'><text style="color:black;font-size:14px">西部风情主礼</text>  
-    <view style='display:initial;float:right'>
-    <text style="padding-right: 25rpx;font-size:14px">¥13000</text><text style='text-decoration: line-through;'>原价：940.0</text></view>
-    </view>
-     <view class="titlename" ><text>#自由 #西部风情</text> <text style='float:right' ><text class="iconfont icon-chakan2"></text>0人浏览</text></view>
-    <view class='price ' style='display: initial;padding-left: 184rpx;'>
-    </view>
-    <!-- <button class="goumai">立即抢购</button> -->
-  </view>
-
-   <view class='giftlist' style=''> 
-  <navigator url='../homeworkDet/homeworkDet'>
-   <view class="img"><image url="../Eventactivities/Eventactivities"  src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3301409187,1148526879&fm=26&gp=0.jpg" mode="widthFix" onclick='exmapleDetail()'></image></view>
-   </navigator>
-    <view class="titlename" style='display:initial'><text style="color:black;font-size:14px">西部风情主礼</text>  
-    <view style='display:initial;float:right'>
-    <text style="padding-right: 25rpx;font-size:14px">¥13000</text><text style='text-decoration: line-through;'>原价：940.0</text></view>
-    </view>
-     <view class="titlename" ><text>#自由 #西部风情</text> <text style='float:right' ><text class="iconfont icon-chakan2"></text>0人浏览</text></view>
-    <view class='price ' style='display: initial;padding-left: 184rpx;'>
-    </view>
-    <!-- <button class="goumai">立即抢购</button> -->
-  </view>
-</view>
-
-
-
 <!-- <text class="iconfont icon-zixun" style=''>默认</text> -->
- <view class="zixun" style="padding-top: 2vw;color:#fb7299" >
-  <view  style="display: initial;padding-top: 2vw;"><text class="" style=''>默认</text> </view> 
-   <view style="display: initial;margin-left: 20rpx;">|</view>
-   <view style="display: initial;"><text class="" style='margin-left: 20rpx;'>价格</text> </view>
-    <view style="display: initial;margin-left: 20rpx;">|</view>
-   <view  style="display: initial;"><text class="" style='margin-left: 20rpx;display: initial;'>浏览量</text> </view>
-    <view style="display: initial;margin-left: 20rpx;">|</view>
-     <view  style="display: initial;"> <text class="" style='margin-left: 20rpx;display: initial;' >筛选</text> </view> 
-</view> 
+<view class="zixun" style="padding-top: 2vw;color:#fb7299">
+	<view style="display: initial;padding-top: 2vw;"><text class="" style='' data-gid='liked desc'  bindtap='getGoodsType'>默认</text> </view>
+	<view style="display: initial;margin-left: 20rpx;">|</view>
+	<view style="display: initial;"><text class="" style='margin-left: 20rpx;' data-gid='price desc'  bindtap='getGoodsType'>价格</text> </view>
+	<view style="display: initial;margin-left: 20rpx;">|</view>
+	<view style="display: initial;"><text class="" style='margin-left: 20rpx;display: initial;' data-gid='view desc'  bindtap='getGoodsType'>浏览量</text> </view>
+	<view style="display: initial;margin-left: 20rpx;">|</view>
+	<view style="display: initial;"> <text class="" style='margin-left: 20rpx;display: initial;' >筛选</text> </view>
+</view>
 
 <!-- <view class="zixun">
   <text class="iconfont icon-zixun">默认</text> 
@@ -174,4 +148,3 @@
   <text class="iconfont icon-zixun" style='margin-left: 20rpx;'>浏览量</text> 
      <text class="iconfont icon-zixun" style='margin-left: 20rpx;' >筛选</text> 
 </view> -->
-	
