@@ -19,10 +19,12 @@ Page({
       console.log(scene);
     
       var that = this;
-      app.getUserInfo(function(userInfo){
-          that.setData({userInfo:userInfo});
-          that.getGoodsType();
-      })
+      that.getGoodsType();
+      // app.getUserInfo(function(userInfo){
+      //     that.setData({userInfo:userInfo});
+      //     console.info('hbqhcdbfbcqbfjcejkqfbcjkeqbj')
+      //     that.getGoodsType();
+      // })
 
       // http.httpGet("product/getproductbytype",{
       //   appid: config.APPID, typeId: 9
@@ -34,11 +36,11 @@ Page({
       //     });
       // });
         //获取商品列表
-      that.getGoodsList(9,function(list){
-          that.setData({
-            IndexList:list
-          });
-      });
+      // that.getGoodsList(9,function(list){
+      //     that.setData({
+      //       IndexList:list
+      //     });
+      // });
   },
   onShow:function(){
         //sta();
@@ -82,8 +84,10 @@ Page({
 
   //顶部分类栏
   getGoodsType:function(event){
-        var that = this;
-       var data = {appid:config.APPID,userid:this.data.userInfo.id}
+      console.info('获取案例列表')
+       var that = this;
+       //console.info(this.data)
+       //var data = {appid:config.APPID,userid:this.data.userInfo.id}
        var sortedColumn = 'liked desc'
        var name = ''
        if (event != undefined  ) {
@@ -95,6 +99,7 @@ Page({
          }
        }
         var data = {name:name,sortedColumn:sortedColumn}
+        console.info(data)
     http.httpGet("wedding/wedding/caselist" ,data,function(res){    // product/getproducttype
       if (res.statusCode == '200'){
               var list = res.data;
@@ -119,39 +124,39 @@ Page({
             }
         });
   },
-  getGoodsList:function(type,callback){
-        var that = this;
-        var data = {appid:config.APPID,typeId:type}
+  // getGoodsList:function(type,callback){
+  //       var that = this;
+  //       var data = {appid:config.APPID,typeId:type}
         
-    http.httpGet("product/getproductbytype" ,data,function(res){
-      console.log("goodlist");
-      console.log(res);
-      if (res.statusCode == '200' ){
-                    var list = res.data;
-                    typeof callback == "function" && callback(list)
-                }
-        });
-  },
-  loadTabGoodsList:function(index){
-        var that = this;
-        var goodsData = that.data.goodsData;
-        if(goodsData[index].banner == undefined || goodsData[index].list ==undefined){
-              var type = goodsData[index].type; 
-              //获取推荐商品
-              this.getGoodsList(type,function(list){
-                    var goods = that.data.goodsData;
-                    goods[index].banner = list;
-                    that.setData({goodsData:goods});
-              })
-               //获取商品列表
-              this.getGoodsList(type,function(list){
-                    var goods = that.data.goodsData;
-                    goods[index].list = list;
-                    that.setData({goodsData:goods});
-              })
-        }
+  //   http.httpGet("product/getproductbytype" ,data,function(res){
+  //     console.log("goodlist");
+  //     console.log(res);
+  //     if (res.statusCode == '200' ){
+  //                   var list = res.data;
+  //                   typeof callback == "function" && callback(list)
+  //               }
+  //       });
+  // },
+  // loadTabGoodsList:function(index){
+  //       var that = this;
+  //       var goodsData = that.data.goodsData;
+  //       if(goodsData[index].banner == undefined || goodsData[index].list ==undefined){
+  //             var type = goodsData[index].type; 
+  //             //获取推荐商品
+  //             this.getGoodsList(type,function(list){
+  //                   var goods = that.data.goodsData;
+  //                   goods[index].banner = list;
+  //                   that.setData({goodsData:goods});
+  //             })
+  //              //获取商品列表
+  //             this.getGoodsList(type,function(list){
+  //                   var goods = that.data.goodsData;
+  //                   goods[index].list = list;
+  //                   that.setData({goodsData:goods});
+  //             })
+  //       }
         
-  },
+  // },
   //事件处理函数
   switchs: function(e) {
     var index = e.detail.current;

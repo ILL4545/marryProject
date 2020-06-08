@@ -64,16 +64,16 @@ App({
                       country: userInfo.country
                     };
                     //console.log(data2);
-                  http.httpGet("user/adduser", data2, function (res) {
-                      if(res.statusCode==200){
-                          http.httpGet("user/getuser",{openId:data2.openId},function(res){
-                            if(res.statusCode==200){
-                              console.log(res)
-                              wx.setStorageSync('user', res.data);
-                            }
-                          })
-                      }
-                    });
+                  // http.httpGet("user/adduser", data2, function (res) {
+                  //     if(res.statusCode==200){
+                  //         http.httpGet("user/getuser",{openId:data2.openId},function(res){
+                  //           if(res.statusCode==200){
+                  //             console.log(res)
+                  //             wx.setStorageSync('user', res.data);
+                  //           }
+                  //         })
+                  //     }
+                  //   });
                   
                 } else {
                       console.log('获取用户登录态失败！' + res.errMsg)
@@ -89,7 +89,7 @@ App({
         typeof cb == "function" && cb(this.globalData.appInfo)
     }else{
         var data = {appid:config.APPID}
-      http.httpGet("test/getappinfo" ,data,function(res){
+      http.httpGet("wedding/wedding/getappinfo" ,data,function(res){
             console.log(res);
         if (res.statusCode == '200'){
                 that.globalData.appInfo = res.data;

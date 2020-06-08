@@ -14,11 +14,12 @@ Page({
   },
   onLoad: function () {
     var that = this
+    console.info(wx.getStorageSync('useraccess'));
     app.getUserInfo(function (userInfo){
          that.setData({
             userInfo:userInfo
           });
-    })
+    });
     var allAddress = wx.getStorageSync('address');
     var address = '';
     for(var i=0;i<allAddress.length;i++){
